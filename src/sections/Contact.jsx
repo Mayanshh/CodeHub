@@ -1,5 +1,6 @@
 import BgVideo from '@/assets/videos/CodingVideo1.mp4'
 import SmoothReveal from '@/animations/SmoothReveal'
+import videoFallbackPoster from '@/assets/images/about_us_bg_img.jpg'
 
 const Contact = () => {
   return (
@@ -7,6 +8,8 @@ const Contact = () => {
       
       {/* Background video */}
       <video
+        preload='auto'
+        poster={videoFallbackPoster}
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
