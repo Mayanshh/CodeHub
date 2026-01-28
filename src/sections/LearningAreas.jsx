@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-import LearnMoreImg from "@/assets/images/learnMoreImg.png";
+import LearnMoreImg from "@/assets/images/LearnMoreImg.png";
 import FluidCursorFollower from "@/components/FluidCursorFollower";
 import Button from "@/Components/Button.jsx";
 
