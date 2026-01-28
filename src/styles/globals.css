@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* FONTS */
+@font-face {
+  font-family: "font-regular";
+  src: url("../assets/fonts/font-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "font-itallic";
+  src: url("../assets/fonts/font-itallic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "font-montreal";
+  src: url("../assets/fonts/montreal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "font-montreal-thin";
+  src: url("../assets/fonts/montreal-thin.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-regular: "font-regular", sans-serif;
+  --font-itallic: "font-itallic", sans-serif;
+  --font-montreal: "font-montreal", sans-serif;
+  --font-montreal-thin: "font-montreal-thin", sans-serif;
+  --primary-color: #0f4c9c;
+  --dark-primary-color: #041e3d;
+  --secondary-color: rgb(229, 114, 43);
+  --bg-color: #000000;
+  --base-color: #f8f5ec;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  overflow-x: hidden !important;
+}
+
+html {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE / Edge legacy */
+}
+
+html::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, iOS */
+}
+
+body {
+  font-family: var(--font-montreal);
+}
+
+/* lenis configs */
+/* Add this to your global CSS */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* mix blend difference optimizations for GPU acceleration */
+.mix-blend-difference {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.word-inner {
+  display: inline-block;
+  vertical-align: top; /* Prevents tiny movements in line-height */
+}
+
+.fontRegular{
+  font-family: var(--font-regular);
+}
+.fontItallic{
+  font-family: var(--font-itallic);
+}
+.fontMontreal{
+  font-family: var(--font-montreal);
+}
+.fontMontrealThin{
+  font-family: var(--font-montreal-thin);
+}
