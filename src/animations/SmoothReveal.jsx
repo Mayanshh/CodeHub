@@ -41,7 +41,7 @@ const SmoothReveal = ({ children, className = "", stagger = 0.02 }) => {
   const processedContent = useMemo(() => wrapText(children), [children]);
 
   useGSAP(() => {
-    // We target .word-inner specifically within this container
+    // target .word-inner specifically within this container
     const words = container.current.querySelectorAll(".word-inner");
 
     if (words.length > 0) {

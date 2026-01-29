@@ -35,7 +35,7 @@ const Preloader = ({ onTimelineComplete }) => {
         ease: "power2.inOut",
       }, 0) // Start at same time as number counter
       
-      // 3. Fade out the Text ("CODE HUB" + Numbers) first
+      // 3. Fade out the Text
       .to(textRef.current, {
         opacity: 0,
         duration: 0.5,
@@ -61,17 +61,11 @@ const Preloader = ({ onTimelineComplete }) => {
 
   return (
     <div ref={comp} className="fixed inset-0 z-[9999] flex items-center justify-center bg-[var(--primary-color)] overflow-hidden pointer-events-none">
-      
-      {/* Background Image - Matches Hero Exactly */}
       <div 
         ref={bgRef}
         className="absolute inset-0 bg-[url(../assets/images/HeroRobot.avif)] bg-cover bg-center origin-center"
       />
-      
-      {/* Dark Overlay to make text pop */}
       <div className="absolute inset-0 bg-black/40" />
-
-      {/* Loading Content: CODE HUB + Numbers */}
       <div ref={textRef} className="relative z-10 flex flex-row items-center justify-center gap-4">
         <h1 className="text-[var(--secondary-color)] text-4xl md:text-6xl font-bold tracking-widest uppercase">
           Code Hub

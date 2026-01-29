@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-import LearnMoreImg from "@/assets/images/LearnMoreImg.png";
+import LearnMoreImg from "@/assets/images/LearnMoreImg.avif";
 import FluidCursorFollower from "@/components/FluidCursorFollower";
 import Button from "@/components/Button.jsx";
 
@@ -206,6 +206,7 @@ const LearningAreas = () => {
 
   return (
     <section
+    id='LearningAreas'
       ref={containerRef}
       className="relative w-full h-[300svh] lg:h-[300vh] bg-none"
     >

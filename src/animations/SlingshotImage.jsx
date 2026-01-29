@@ -23,7 +23,7 @@ const SlingshotImage = ({
   const imageRef = useRef(null);
 
   useGSAP(() => {
-    // Check if we are on mobile to adjust the "pop" intensity
+    // Check if on mobile screen to adjust the "pop" intensity
     const isMobile = window.innerWidth < 768;
 
     gsap.set(imageRef.current, {
@@ -68,9 +68,7 @@ const SlingshotImage = ({
         alt={alt}
         className="absolute shadow-xl rounded-lg lg:rounded-xl" 
         style={{ 
-          // Responsive Height Logic: 
-          // Mobile: Use 12vw so they aren't tiny icons. 
-          // Desktop: Reverts to your original 6vw.
+          // Responsive logic
           height: `max(45px, ${height})`, 
           width: width,
           objectFit: "cover",

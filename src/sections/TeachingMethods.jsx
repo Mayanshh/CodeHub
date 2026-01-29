@@ -1,11 +1,11 @@
-import img1 from '@/assets/images/Student_studying_img.jpg'
-import img2 from '@/assets/images/Student_studying_img2.jpg'
-import img3 from '@/assets/images/Student_studying_img3.jpg'
+import img1 from '@/assets/images/Student_studying_img.avif'
+import img2 from '@/assets/images/Student_studying_img2.avif'
+import img3 from '@/assets/images/Student_studying_img3.avif'
 
 
 const TeachingMethods = () => {
   return (
-    <section className="relative h-[120svh] lg:h-[200svh] w-full bg-white flex flex-col items-center justify-start">
+    <section id='teachingMethods' className="relative h-[120svh] lg:h-[200svh] w-full bg-white flex flex-col items-center justify-start">
       <h1 className='h-auto w-[80%] lg:h-fit mt-[20svh] lg:mt-[30svh] w-full font-bold whitespace-wrap text-[14vw] lg:text-[11rem] tracking-tighter lg:tracking-tight leading-[0.80] text-black uppercase text-center'>
         Teaching Method
      </h1>

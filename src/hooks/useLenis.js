@@ -1,3 +1,5 @@
+//useLenis is used in App.jsx for smooth scroll
+
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
@@ -7,7 +9,7 @@ const useLenis = () => {
   const lenisRef = useRef(null);
 
   useEffect(() => {
-    // 1. Initialize Lenis with "Luxurious" settings
+    // 1. Initialize Lenis
     const lenis = new Lenis({
       duration: 1.4,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -21,7 +23,7 @@ const useLenis = () => {
 
     lenisRef.current = lenis;
 
-    // 2. Critical: Update ScrollTrigger on every scroll
+    // 2. Update ScrollTrigger on every scroll
     lenis.on("scroll", ScrollTrigger.update);
 
     // 3. Sync GSAP ticker with Lenis
@@ -29,9 +31,11 @@ const useLenis = () => {
       lenis.raf(time * 1000);
     };
     gsap.ticker.add(updateTicker);
-    gsap.ticker.lagSmoothing(0); // Prevents "jumps" after heavy CPU tasks
 
-    // 4. Fix "Stuck at Bottom": Recalculate size on every DOM change
+     // Prevents "jumps" after heavy CPU tasks
+    gsap.ticker.lagSmoothing(0);
+
+    // 4. Recalculate size on every DOM change
     const resizeObserver = new ResizeObserver(() => {
       lenis.resize();
     });

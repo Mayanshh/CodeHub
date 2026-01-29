@@ -1,3 +1,5 @@
+//used only in TecahingAreas.jsx
+
 import { useEffect, useRef } from "react";
 
 const lerp = (a, b, n) => a + (b - a) * n;

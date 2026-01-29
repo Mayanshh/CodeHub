@@ -9,7 +9,7 @@ const Navbar = () => {
   const containerRef = useRef(null);
   const tl = useRef(null);
 
-  // --- Luxury Menu Animation ---
+  //  Menu Animation
   useGSAP(() => {
     // 1. Setup the timeline (paused initially)
     tl.current = gsap.timeline({ paused: true })
@@ -39,16 +39,10 @@ const Navbar = () => {
 
   return (
     <div ref={containerRef}>
-      {/* --- NAVBAR --- */}
       <nav className="fixed z-[99999] left-0 transform w-[100vw] h-[8svh] flex flex-row items-center justify-between mix-blend-difference px-6 lg:px-14 fontMontreal">
-        
-        {/* 1. LOGO ("EMMPO") - Left */}
-        {/* Responsive: Auto width on mobile, 7.5% on desktop (original) */}
         <h2 className=" overflow-x-hidden text-white tracking-tight text-[1.2rem] lg:text-[1.4rem] w-auto lg:w-[7.5%] uppercase mix-blend-difference z-[99999]">
           <TextHoverEffect direction="up">CODEHUB</TextHoverEffect>
         </h2>
-
-        {/* 2. CENTER LINKS - HIDDEN on Mobile, Visible on Desktop */}
         <div className="hidden lg:flex fontMontrealThin w-[28%] h-[70%] mix-blend-difference text-white text-[0.8rem] flex-row items-center justify-between">
           {["Why?", "How?", "What?", "About us", "Say hello!"].map((text, i) => (
             <a key={i} href="/">
@@ -98,7 +92,7 @@ const Navbar = () => {
           ))}
         </div>
         
-        {/* Decorative Footer in Menu */}
+        {/* Footer in Menu */}
         <div className="absolute bottom-10 text-sm opacity-50 fontMontrealThin">
             CodeHub Education &copy; 2024
         </div>

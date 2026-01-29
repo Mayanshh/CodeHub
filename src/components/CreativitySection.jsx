@@ -35,11 +35,7 @@ const CreativitySection = () => {
         </SmoothReveal>
       </div>
       
-      {/* SLINGSHOT IMAGES 
-          Responsive Fixes:
-          1. height: increased from 6vw to 12vw on mobile so logos are visible.
-          2. toTop/toLeft: Adjusted via getPos() to "frame" the text instead of covering it.
-      */}
+      {/* SLINGSHOT IMAGES : Responsive */}
       
       <SlingshotImage 
         src="https://logowik.com/content/uploads/images/nodejs.jpg"

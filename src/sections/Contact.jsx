@@ -1,10 +1,10 @@
 import BgVideo from '@/assets/videos/CodingVideo1.mp4'
 import SmoothReveal from '@/animations/SmoothReveal'
-import videoFallbackPoster from '@/assets/images/about_us_bg_img.jpg'
+import videoFallbackPoster from '@/assets/images/about_us_bg_img.avif'
 
 const Contact = () => {
   return (
-    <section className="relative h-[100svh] w-full flex items-center lg:items-start justify-center overflow-hidden">
+    <section id='contact' className="relative h-[100svh] w-full flex items-center lg:items-start justify-center overflow-hidden">
       
       {/* Background video */}
       <video

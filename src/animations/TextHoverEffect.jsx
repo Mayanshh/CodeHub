@@ -18,8 +18,6 @@ const TextHoverEffect = ({ children, direction = "up", className = "" }) => {
     const l1 = container.current.querySelectorAll(".layer-1 span");
     const l2 = container.current.querySelectorAll(".layer-2 span");
 
-    // Luxury animations use a longer duration (0.8s - 1.2s)
-    // and a higher stagger delay for a "wave" effect
     gsap.to(l1, {
       y: moveValue,
       duration: 1, 

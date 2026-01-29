@@ -5,7 +5,7 @@ const Discover = () => {
   const isDesktop = useIsDesktop();
 
   return (
-    <section className='relative w-full h-[100svh] max-h-[100svh] lg:h-[200svh] lg:max-h-[200svh] overflow-hidden flex flex-col items-center justify-center bg-red-500'>
+    <section id='discover' className='relative w-full h-[100svh] max-h-[100svh] lg:h-[200svh] lg:max-h-[200svh] overflow-hidden flex flex-col items-center justify-center bg-red-500'>
       {isDesktop ? (
        <img
         src={RobotHandImg}

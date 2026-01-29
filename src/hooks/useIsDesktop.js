@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 export const useIsDesktop = (query = '(min-width: 1024px)') => {
   // Initialize state with the current match
   const [isDesktop, setIsDesktop] = useState(() => {
-    // Check if window is defined (for SSR/Next.js compatibility)
+    // Check if window is defined
     if (typeof window !== 'undefined') {
       return window.matchMedia(query).matches;
     }

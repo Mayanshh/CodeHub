@@ -3,9 +3,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
-import careersImg1 from "@/assets/images/careersImg1.jpg";
-import careersImg2 from "@/assets/images/careersImg2.jpg";
-import careersImg3 from "@/assets/images/careersImg3.jpg";
+import careersImg1 from "@/assets/images/careersImg1.avif";
+import careersImg2 from "@/assets/images/careersImg2.avif";
+import careersImg3 from "@/assets/images/careersImg3.avif";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,8 +50,6 @@ const Careers = () => {
       id='careers' 
       className="w-full relative px-6 lg:px-14 min-h-screen lg:min-h-[120svh] bg-[var(--base-color)] overflow-hidden py-20 lg:py-0"
     >
-      
-      {/* --- MAIN TITLE --- */}
       <div 
         ref={mainTitleRef} 
         className="will-change-transform w-full relative z-[100] lg:top-40 lg:left-1/2 lg:-translate-x-1/2 flex flex-col items-center"
@@ -69,7 +67,7 @@ const Careers = () => {
           DESKTOP: 'lg:absolute' restores your exact pixel-perfect positions.
       */}
 
-      {/* Image 1 (Zuck) */}
+      {/* Image 1 */}
       <div 
         ref={imgGroup1Ref} 
         className="relative mx-auto mt-10 rotate-3 h-[250px] w-fit
@@ -82,7 +80,7 @@ const Careers = () => {
         </h2>
       </div>
 
-      {/* Image 2 (Jobs) */}
+      {/* Image 2 */}
       <div 
         ref={imgGroup2Ref} 
         className="relative mx-auto mt-10 -rotate-6 h-[300px] w-fit
@@ -95,7 +93,7 @@ const Careers = () => {
         </h2>
       </div>
 
-      {/* Image 3 (Elon / Center Card) */}
+      {/* Image 3 */}
       <div 
         ref={centerCardRef} 
         className="relative mx-auto mt-10 rotate-2 w-[80%] max-w-[300px]

@@ -1,4 +1,4 @@
-import BgImg from '@/assets/images/about_us_bg_img.jpg'
+import BgImg from '@/assets/images/about_us_bg_img.avif'
 import SmoothReveal from '@/animations/SmoothReveal'
 
 const AboutUs = () => {
